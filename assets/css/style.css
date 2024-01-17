@@ -25,7 +25,7 @@
   --violet-light: hsl(300, 100%, 30%);
   --purple-dark: hsl(272, 100%, 43%);
   --purple-light: hsl(274, 100%, 50%);
-  --gray: hsl(0, 0%, 25%);
+  --gray: hsl(0, 0%, 53%);
   --red-light: hsl(0, 100% , 48%);
   --red-dark: hsl(4, 86% , 41%);
   --light: hsl(0, 0% , 85%);
@@ -275,6 +275,7 @@ body { background: hsla(0, 0%, 100%, 0.5); }
   color: var(--black-coral);
   font-size: var(--fs-5);
   font-family: var(--ff-sourcesans);
+ 
 }
 
 /*<-----------------------O----------------------->*/
@@ -706,6 +707,10 @@ body { background: hsla(0, 0%, 100%, 0.5); }
   margin-bottom: -70px;
 }
 
+.section-title-secondary{
+  color: var(--gray);
+}
+
 .about-us .images {
   display: flex;
   flex-direction: column;
@@ -920,7 +925,7 @@ body { background: hsla(0, 0%, 100%, 0.5); }
 .popular-card {
   position: relative;
   overflow: hidden;
-  height: 430px;
+  height: 470px;
   border-radius: 5px;
 }
 
@@ -928,7 +933,7 @@ body { background: hsla(0, 0%, 100%, 0.5); }
 
 .popular-card .card-img img {
   width: 100%;
-  height: 100%;
+  height: 85%;
   object-fit: cover;
   transition: 0.5s all ease-in-out;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -944,8 +949,7 @@ body { background: hsla(0, 0%, 100%, 0.5); }
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: var(--light);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
   width: 100%;
@@ -971,6 +975,85 @@ body { background: hsla(0, 0%, 100%, 0.5); }
   text-transform: uppercase;
   margin-bottom: 8px;
   
+}
+
+.recommendation {
+  display: flex;
+  align-items: center;
+  margin-top: .5em;
+  margin-bottom: .3em;
+  
+}
+
+.score {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(130deg, rgba(254,207,139,1) 0%, rgba(255,198,115,1) 75%, rgba(255,187,88,1) 100%);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 50px;
+  user-select: none;
+  text-align: center;
+  font-size: var(--fs-5);
+  font-family: var(--ff-sourcesans);
+
+}
+
+.score span {
+  margin-left: 8px;
+  margin-right: 10px; 
+}
+
+
+.score:first-child {
+  padding: 1px 8px 5px 4px; 
+}
+
+.score:last-child {
+  font-size: 1.1em;
+  padding-left: 16px;
+}
+
+.comment {
+  margin-left: 10px; 
+  color: var(--black-coral);
+  font-size: var(--fs-5);
+  font-family: var(--ff-sourcesans);
+}
+
+.score:first-child {
+  padding: 1px 8px 5px 4px; /* Adjusted padding for the first child */
+}
+
+.score:last-child {
+  font-size: 1.1em;
+  padding-left: 16px;
+}
+
+.comment {
+  margin-left: 10px; /* Adjust the margin value according to your preference */
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.original-price {
+  font-size: 1.5em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-lato);
+  color: var(--gray);
+}
+
+.discount-info {
+  color: var(--green-light);
 }
 
 .popular-card .card-title { margin-bottom: 5px; }
