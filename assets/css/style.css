@@ -802,7 +802,7 @@ body { background: hsla(0, 0%, 100%, 0.5); }
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: -50px;
+    margin-top: -65px;
   }
   
   .about-us .images {
@@ -917,7 +917,11 @@ body { background: hsla(0, 0%, 100%, 0.5); }
 
 
 /* Popular Dsstination */
-.popular { padding-block: var(--section-padding); }
+.popular { 
+  padding-block: var(--section-padding);
+  background: var(--light);
+}
+
 
 .popular-list,
 .popular-list > li:not(:last-child) { margin-bottom: 30px; }
@@ -925,7 +929,7 @@ body { background: hsla(0, 0%, 100%, 0.5); }
 .popular-card {
   position: relative;
   overflow: hidden;
-  height: 470px;
+  height: 500px;
   border-radius: 5px;
 }
 
@@ -935,12 +939,13 @@ body { background: hsla(0, 0%, 100%, 0.5); }
   width: 100%;
   height: 85%;
   object-fit: cover;
-  transition: 0.5s all ease-in-out;
+  transition: filter 0.3s ease-in;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .popular-card .card-img:hover img{
-  transform: scale(1.2);
+  cursor: pointer;
+  filter: brightness(75%);
 
 }
 
@@ -949,10 +954,11 @@ body { background: hsla(0, 0%, 100%, 0.5); }
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--light);
+  background: var(--white);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
   width: 100%;
+  height: 50%;
 }
 
 
@@ -970,8 +976,9 @@ body { background: hsla(0, 0%, 100%, 0.5); }
 }
 
 .popular-card .card-subtitle {
-  color: var(--green-dark);
+  color: var(--gray);
   font-size: var(--fs-6);
+  font-weight: var(--fw-600);
   text-transform: uppercase;
   margin-bottom: 8px;
   
@@ -989,36 +996,27 @@ body { background: hsla(0, 0%, 100%, 0.5); }
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(130deg, rgba(254,207,139,1) 0%, rgba(255,198,115,1) 75%, rgba(255,187,88,1) 100%);
+  background: var(--orrange-light);
   color: white;
   padding: 8px 10px;
   border-radius: 50px;
   user-select: none;
   text-align: center;
   font-size: var(--fs-5);
-  font-family: var(--ff-sourcesans);
+  font-family: var(--ff-opensans);
 
 }
 
 .score span {
   margin-left: 8px;
-  margin-right: 10px; 
-}
-
-
-.score:first-child {
-  padding: 1px 8px 5px 4px; 
-}
-
-.score:last-child {
-  font-size: 1.1em;
-  padding-left: 16px;
+  margin-right: 8px; 
+  text-align: center;
 }
 
 .comment {
   margin-left: 10px; 
   color: var(--black-coral);
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   font-family: var(--ff-sourcesans);
 }
 
@@ -1028,11 +1026,7 @@ body { background: hsla(0, 0%, 100%, 0.5); }
 
 .score:last-child {
   font-size: 1.1em;
-  padding-left: 16px;
-}
-
-.comment {
-  margin-left: 10px; /* Adjust the margin value according to your preference */
+  padding-left: 8px;
 }
 
 .price {
@@ -1048,12 +1042,15 @@ body { background: hsla(0, 0%, 100%, 0.5); }
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family: var(--ff-lato);
-  color: var(--gray);
+  font-family: var(--ff-sourcesans);
+  color: var(--gunmetal);
 }
 
 .discount-info {
-  color: var(--green-light);
+  color: var(--blue-light);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--ff-sourcesans);
 }
 
 .popular-card .card-title { margin-bottom: 5px; }
