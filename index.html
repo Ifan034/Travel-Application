@@ -98,7 +98,7 @@
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="mail-sharp"></ion-icon>
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
@@ -176,16 +176,8 @@
       <section class="hero" id="home">
         <div class="container">
 
-          <h2 class="h1 hero-title">Hero Header Section.</h2>
-
-          <p class="hero-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, odio non veritatis reiciendis molestias beatae incidunt praesentium delectus quidem sed illum hic est illo soluta!
-          </p>
-
-          <div class="btn-group">
-            <a href="#"  class="btn btn-secondary">Explore more</a>
-            <a href="#" class="btn btn-primary">Book Trip</a>
-          </div>
+          <h2 class="h2 hero-title">Let's Discover The World Together</h2>
+          <p class="hero-text">Enjoy Your Vacation With Us.</p>
 
         </div>
       </section>
@@ -197,37 +189,39 @@
       <!---===Tour Search Button===--->
       <section class="tour-search" id="destination">
         <div class="container">
+          <div class="tour-search-box">
+            <form action="" class="tour-search-form">
 
-          <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"><ion-icon class="icon" name="location-sharp"></ion-icon>Where To Go?</label>
+  
+                <input type="text" name="destination" id="destination" required placeholder="your destination"
+                  class="input-field">
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="people" class="input-label"><ion-icon class="icon" name="people-sharp"></ion-icon>Person?</label>
+  
+                <input type="number" name="people" id="people" required placeholder="number of people" class="input-field">
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label"><ion-icon name="enter-sharp"></ion-icon></ion-icon>Check-In</label>
+  
+                <input type="date" name="checkin" id="checkin" required class="input-field">
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label"><ion-icon name="ticket"></ion-icon>Check-Out</label>
+  
+                <input type="date" name="checkout" id="checkout" required class="input-field">
+              </div>
+  
+              <button type="submit" class="btn btn-primary">Find Now</button>
+            </form>
+          </div>
 
-            <div class="input-wrapper">
-              <label for="destination" class="input-label"><ion-icon class="icon" name="location-sharp"></ion-icon>Where To Go</label>
 
-              <input type="text" name="destination" id="destination" required placeholder="Destination"
-                class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="people" class="input-label"><ion-icon class="icon" name="people-sharp"></ion-icon>Person</label>
-
-              <input type="number" name="people" id="people" required placeholder="Number Of Person" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkin" class="input-label"><ion-icon class="icon" name="calendar-sharp"></ion-icon>Check-in</label>
-
-              <input type="date" name="checkin" id="checkin" required class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkout" class="input-label"><ion-icon class="icon" name="calendar-sharp"></ion-icon>Check-out</label>
-
-              <input type="date" name="checkout" id="checkout" required class="input-field">
-            </div>
-
-            <button type="submit" class="btn btn-secondary">Find Now</button>
-
-          </form>
 
         </div>
       </section>
@@ -251,19 +245,19 @@
 
             
             <div class="about-content">
-              <h3 class="section-title-secondary">Explore New Destinations with New Experience!</h3>
+              <!-- <h3 class="section-title-secondary">Explore New Destinations with New Experience!</h3> -->
             
               <div class="content-icon">
-                <h3 class="card-text-about"><ion-icon name="paper-plane-sharp"></ion-icon> Travel More Destinations!</h3>
-                <p class="section-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, natus.</p> 
-                <h3 class="card-text-about"><ion-icon name="checkmark-circle-sharp"></ion-icon> Affordable Tour Packages!</h3>
-                <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur.</p>
-               <h3 class="card-text-about"><ion-icon name="person-add-sharp"></ion-icon>Best Tour Guides & Services!</h3>
-               <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sit!</p>
+                <h3 class="card-text-about"><ion-icon name="airplane-sharp"></ion-icon> Travel More Destinations!</h3>
+                <p class="section-text-two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, natus.</p> 
+                <h3 class="card-text-about"><ion-icon name="today-sharp"></ion-icon> Affordable Tour Packages!</h3>
+                <p class="section-text-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur.</p>
+               <h3 class="card-text-about"><ion-icon name="people-sharp"></ion-icon>Best Tour Guides & Services!</h3>
+               <p class="section-text-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sit!</p>
 
               </div>
 
-              <button class="btn btn-secondary about-btn">Learn More</button>
+              <button class="btn btn-primary about-btn">Learn More</button>
             </div>
 
           </div>

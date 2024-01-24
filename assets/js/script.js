@@ -29,7 +29,7 @@ const goTopBtn = document.querySelector("[data-go-top]");
 
 window.addEventListener("scroll", function () {
 
-  if (window.scrollY >= 200) {
+  if (window.scrollY >= 650) {
     header.classList.add("active");
     goTopBtn.classList.add("active");
   } else {
