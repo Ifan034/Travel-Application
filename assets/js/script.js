@@ -44,7 +44,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const phrases = ["Enjoy Your Vacation With Us.", "Embark on a Journey of a Lifetime.", "Where Every Trip Tells a Story."];
+const phrases = ["Let's Discover The World Together.", "Seamless Travel Experiences at Your Fingertips.", "Where Every Trip Tells a Story."];
 const el = document.getElementById("typewriter");
 
 let sleepTime = 200;
