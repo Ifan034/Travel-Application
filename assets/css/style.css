@@ -1480,7 +1480,7 @@ img {
   padding: 5em 0;
   font-size: 18px;
   border-radius: 3px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -1553,6 +1553,131 @@ span.text {
   }
 }
 
+/*--------------------------------------*/
+
+
+
+/*client Review Option*/
+.testimonial {
+  padding-block: var(--section-padding); 
+}
+
+.client-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  margin-top: 100px;
+}
+.testimonial-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 1.8em 1.2em;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--light);
+  background: var(--background-three);
+  border-radius: 3px; 
+}
+.client-wrapper button {
+  position: absolute;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+}
+button#next {
+  right: 160px;
+  color: var(--green-light);
+  font-size: 1.5em;
+  align-items: center;
+  background: var(--light);
+  padding: 3px;
+}
+button#prev {
+  left: 160px;
+  color: var(--green-light);
+  font-size: 1.5em;
+  align-items: center;
+  background: var(--light);
+  padding: 3px;
+}
+.testimonial-container p {
+  margin-top: 10px;
+  color: var(--gray);
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+.testimonial-container img {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1.8em auto 1.25em auto;
+  border-radius: 100px;
+  width: 150px; 
+  height: 150px;
+  margin-top: -80px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+.testimonial-container h3 {
+  color: var(--orrange-light);
+  font-size: 1.2em;
+  text-align: center;
+  font-family: var(--ff-sourcesans);
+  
+}
+.testimonial-container h6 {
+  color: var(--gray-light);
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+  font-weight: var(--fw-600);
+  text-align: center;
+  font-family: var(--ff-sourcesans);
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .client-wrapper {
+    font-size: .8em;
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonial-container{
+    width: 100%;
+    height: 60vh;
+    dispaly: grid;
+  }
+
+  button#next {
+    font-size: 1.5em;
+    bottom: 20px;
+    right: 30px;
+    background: var(--light);
+    padding: 3px;
+    
+
+  }
+
+  button#prev {
+    font-size: 1.5em;
+    bottom: 20px;
+    left: 30px;
+    background: var(--light);
+    padding: 3px;
+
+  }
+
+  .testimonial-container img {
+    margin-top: -100px;
+  }
+}
+
+/*----------------------------*/
 
 
 /* Gallery */
