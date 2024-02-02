@@ -1440,6 +1440,7 @@ img {
 
 
 
+
 /*<-----------------------O----------------------->*/
 
 
@@ -1466,7 +1467,7 @@ img {
   align-items: center;
   gap: 20px;
   padding: 10px;
-
+  
 }
 
 .container-number {
@@ -1491,7 +1492,7 @@ span.num {
   align-items: center;
   justify-content: center;
   font-weight:  var(--fw-600);;
-  font-size:  var(--fs-3);
+  font-size:  var(--fs-2);
   margin-bottom: 8px;
   font-family: var(--ff-sourcesans);;
 }
@@ -1499,8 +1500,8 @@ span.num {
 
 span.text {
   position: relative;
-  color: var(--white);
-  font-size: 1.2em;
+  color: var(--light);
+  font-size: 1em;
   text-align: center;
   font-weight: var(--fw-600);
   line-height: 0;
@@ -1594,7 +1595,18 @@ button#next {
   align-items: center;
   background: var(--light);
   padding: 3px;
+  transition: var(--transition);
 }
+
+#next:hover {
+  color: var(--green-dark);
+}
+
+#prev:hover {
+  color: var(--green-dark);
+}
+
+
 button#prev {
   left: 160px;
   color: var(--green-light);
@@ -1605,11 +1617,12 @@ button#prev {
 }
 .testimonial-container p {
   margin-top: 10px;
-  color: var(--gray);
+  color: var(--dark-light);
   text-align: center;
   font-size: 0.8em;
   line-height: 2em;
   letter-spacing: 0.05em;
+  font-family: var(--opensans);
 }
 .testimonial-container img {
   display: block;
@@ -1629,9 +1642,19 @@ button#prev {
   font-family: var(--ff-sourcesans);
   
 }
-.testimonial-container h6 {
+.testimonial-container h5 {
   color: var(--gray-light);
   font-size: 0.9em;
+  letter-spacing: 0.03em;
+  font-weight: var(--fw-600);
+  text-align: center;
+  font-family: var(--ff-sourcesans);
+  margin-top: 5px;
+}
+
+.testimonial-container h6 {
+  color: var(--green-light);
+  font-size: 0.8em;
   letter-spacing: 0.03em;
   font-weight: var(--fw-600);
   text-align: center;
@@ -1642,7 +1665,7 @@ button#prev {
 
 @media screen and (max-width: 768px) {
   .client-wrapper {
-    font-size: .8em;
+    font-size: .9em;
     width: 100%;
     height: auto;
   }
@@ -1706,8 +1729,13 @@ button#prev {
 
 /*<-----------------------O----------------------->*/
 
+/* Blog Post Section*/
+.blog {
+  padding-block: var(--section-padding);
+}
 
 
+/*<-----------------------O----------------------->*/
 
 
 /* Footer */
@@ -2261,7 +2289,7 @@ address {
 
   /* Hero */
   .hero {
-    min-height: 800px;
+    min-height: 720px;
   }
   .hero-title {
     width: 100%;
@@ -2274,7 +2302,7 @@ address {
     font-size: var(--fs-2);
     font-weight: var(--fw-700);
   }
-  .hero .container { max-width: 740px; }
+  .hero .container { max-width: 800px; }
 
   /* Tour search */
   .tour-search{
