@@ -167,10 +167,10 @@ body { background: var(--white); }
 
 
 .btn-secondary {
-  border: 2px solid var(--orrange-dark);
-  background-color: initial;
+
+  background-color: var(--green-light);
   background-position: 0 0;
-  color: var(--orrange-light);
+  color: var(--white);
   border-radius: 3px;
   box-sizing: border-box;
   cursor: pointer;
@@ -188,7 +188,7 @@ body { background: var(--white); }
 .btn-secondary:not(:disabled):hover,
 .btn-secondary:not(:disabled):focus {
   outline: 0;
-  background: var(--orrange-dark);
+  background: var(--green-dark);
   color: var(--white);
   box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.10);
 }
@@ -1418,7 +1418,6 @@ img {
 
 /* CTA */
 .cta {
-  /* background: var(--background-one); */
   padding-block: var(--section-padding);
   position: relative;
 
@@ -1428,17 +1427,137 @@ img {
 
 .cta .section-text { font-size: var(--fs-5); }
 
-.cta-btn {
-  position: absolute;
-  margin: 0;
-  position: absolute;
-  top: 105%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+
+
+/* Contact From */
+.contact-form {
+  padding-block: var(--section-padding);
 }
 
+.form-div {
+  dispaly: grid;
+  align-items: center;
+  background: var(--background-one);
+  padding: 10px;
+}
 
+.contact-in {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  
+}
+
+.contact-map  {
+  width: 100%;
+  height: 65vh;
+  flex: 50%;
+}
+
+.contact-map  iframe{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.contact-form-section {
+  width: 100%;
+  height: 65vh;
+  flex: 50%;
+  padding: 30px;
+ 
+  
+}
+
+.contact-form-section h1 {
+  margin-bottom: 10px;
+  font-family: var(--sourcesans);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-2);
+  text-transform: uppercase;
+}
+
+.contact-form-txt {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--gray-light);
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 1em;
+  padding: 15px;
+  background: var(--white);
+  font-family: var(--ff-lato);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
+  color: var(--dark);
+
+
+}
+
+.contact-form-txt::placeholder {
+  color: var(--gray);
+  font-weight: var(--fw-500);
+}
+
+.contact-form-txtarea {
+  width: 100%;
+  height: 150px;
+  color: var(--dark);
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 1em;
+  padding: 15px;
+  font-family: var(--ff-lato);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
+
+
+}
+
+.contact-form-txtarea::placeholder {
+  color: var(--gray);
+  font-weight: var(--fw-500);
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .contact-in{
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+  
+  }
+
+  .contact-map{
+    width: 100%;
+    height: 50%;
+    flex: 50%;
+ 
+  }
+
+  .contact-map ifram {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  
+  } 
+
+  .contact-form-section {
+    width: 100%;
+    height: 50%;
+    flex: 50%;
+  }
+}
 
 
 /*<-----------------------O----------------------->*/
@@ -1447,7 +1566,7 @@ img {
 /* Number Animation */
 .number-animation {
   padding-block: var(--section-padding); 
-  background-image: url("https://images.pexels.com/photos/158136/greece-holidays-holiday-summer-158136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://img.freepik.com/premium-vector/travel-worldwide-vector-design-let-s-go-travel-text-world-map-background-with-airplane_572293-827.jpg");
   margin-top: 80px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1467,7 +1586,7 @@ img {
   align-items: center;
   gap: 20px;
   padding: 10px;
-  
+
 }
 
 .container-number {
@@ -1481,17 +1600,20 @@ img {
   padding: 5em 0;
   font-size: 18px;
   border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
 }
 
 
 
 span.num {
-  color: var(--orrange-light);
+  color: var(--gray-light);
   display: grid;
   align-items: center;
   justify-content: center;
-  font-weight:  var(--fw-600);;
+  font-weight:  var(--fw-500);;
   font-size:  var(--fs-2);
   margin-bottom: 8px;
   font-family: var(--ff-sourcesans);;
@@ -1515,7 +1637,7 @@ span.text {
   align-items: center;
   color: var(--green-light);
   font-size: 1.2em;
-  background: var(--background-one);
+  background: var(--light);
   padding: 12px;
   border-radius: 50%;
 }
@@ -1551,7 +1673,12 @@ span.text {
   .container-number {
     width: 100%;
     height: 25vmin;
+    box-shadow: none;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
   }
+
+
 }
 
 /*--------------------------------------*/
@@ -1577,9 +1704,8 @@ span.text {
   height: 100%;
   margin: auto;
   padding: 1.8em 1.2em;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--light);
-  background: var(--background-three);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  background: var(--background-one);
   border-radius: 3px; 
 }
 .client-wrapper button {
@@ -1617,12 +1743,13 @@ button#prev {
 }
 .testimonial-container p {
   margin-top: 10px;
-  color: var(--dark-light);
+  color: var(--gray);
   text-align: center;
   font-size: 0.8em;
   line-height: 2em;
   letter-spacing: 0.05em;
   font-family: var(--opensans);
+
 }
 .testimonial-container img {
   display: block;
@@ -1633,7 +1760,7 @@ button#prev {
   width: 150px; 
   height: 150px;
   margin-top: -80px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 .testimonial-container h3 {
   color: var(--orrange-light);
@@ -1648,12 +1775,13 @@ button#prev {
   letter-spacing: 0.03em;
   font-weight: var(--fw-600);
   text-align: center;
-  font-family: var(--ff-sourcesans);
+  font-family: var(--ff-playfair);
   margin-top: 5px;
 }
 
 .testimonial-container h6 {
   color: var(--green-light);
+  padding: 5px;
   font-size: 0.8em;
   letter-spacing: 0.03em;
   font-weight: var(--fw-600);
@@ -1733,6 +1861,115 @@ button#prev {
 .blog {
   padding-block: var(--section-padding);
 }
+
+.blog-card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 325px;
+  height: 500px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  margin: 20px;
+  position: relative;
+  
+}
+
+.blog-card:hover {
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+
+.blog-card img{
+  width: 100%;
+  height: 200px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+ 
+}
+
+.blog-card .blog-date{
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: var(--gunmetal);
+  color: var(--gray-light);
+  font-size: .8em;
+  font-weight: var(--fw-800);
+  padding: 10px;
+  font-family: var(--ff-opensans);
+  border-radius: 1px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 5px; 
+}
+
+.blog-date span {
+  color: var(--gainsboro);
+  margin-right: 5px;
+}
+
+.blog-card-content h3 {
+  font-size: 1.2em;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.blog-card-content p {
+  color: var(--gray);
+  line-height: 1.3;
+  font-size: .8em;
+  padding: 10px;
+
+}
+
+.blog-btn {
+  color: var(--green-light);
+  cursor: pointer;
+  padding: 10px;
+  font-size: .9em;
+  font-weight: var(--fw-600);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.blog-btn:hover .arrow {
+  transform: translateX(15px);
+  font-weight: var(--fw-600);
+  font-size: 1.2em;
+}
+
+.blog-btn:hover {
+  color: var(--green-dark);
+}
+
+@media screen and (max-width: 768px) {
+  .blog-card {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .blog-card img{
+    width: 100%;
+    height: 300px;
+  }
+
+  .blog-card-content h3 {
+    font-size: 1em;
+  }
+
+  .blog-card-content p {
+    font-size: .8em;
+  }
+
+} 
 
 
 /*<-----------------------O----------------------->*/
@@ -2289,11 +2526,11 @@ address {
 
   /* Hero */
   .hero {
-    min-height: 720px;
+    min-height: 800px;
   }
   .hero-title {
     width: 100%;
-    margin-top: -182px;
+    margin-top: -180px;
     color: var(--white);
     
   }
@@ -2302,7 +2539,7 @@ address {
     font-size: var(--fs-2);
     font-weight: var(--fw-700);
   }
-  .hero .container { max-width: 800px; }
+  .hero .container { max-width: 850px; }
 
   /* Tour search */
   .tour-search{

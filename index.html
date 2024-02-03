@@ -132,14 +132,14 @@
             <li><a href="#" class="navbar-link">Pages <ion-icon name="caret-down"></ion-icon></a>
               <ul class="dropdown-content">
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#popular">Popular</a></li>
                 <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#destination">Popular</a></li>
               </ul>
             </li>
 
 
             <li>
-              <a href="#destination" class="navbar-link" data-nav-link>Destination</a>
+              <a href="#destination-popular" class="navbar-link" data-nav-link>Destination</a>
             </li>
 
             <li>
@@ -210,7 +210,7 @@
               </div>
   
               <div class="input-wrapper">
-                <label for="checkin" class="input-label"><ion-icon name="enter-sharp"></ion-icon></ion-icon>Check-In</label>
+                <label for="checkin" class="input-label"><ion-icon name="enter-sharp"></ion-icon>Check-In</label>
   
                 <input type="date" name="checkin" id="checkin" required class="input-field">
               </div>
@@ -243,8 +243,8 @@
           <div class="about-us">
 
             <div class="images">
-              <img class="img-one" src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-              <img class="img-two" src="https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="about-img" alt="img-2">
+              <img class="img-one" src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img-1">
+              <img class="img-two" src="https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  alt="img-2">
             </div>
 
             
@@ -267,12 +267,12 @@
           </div>
         
 
-       </div>
+        </div>
       </section>
 
 
       <!---===Popular Destination===--->
-      <section class="destination-popular" id="#popular">
+      <section class="destination-popular" id="destination-popular">
         <div class="container">
           <p class="section-subtitle">DESTINATION</p>
 
@@ -282,7 +282,7 @@
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae eum temporibus nulla esse maiores a.
           </p>
 
-          <div class="img-flexbox">
+          <div class="img-flexbox" id="#destination">
 
             <article class="container__item">
               <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="thailand" class="card card1"/>
@@ -699,7 +699,7 @@
                   </div>
 
                   <button class="btn btn-accent btn-card">Explore Now</button>
-
+                </div>
               </div>
             
             </li>
@@ -731,10 +731,37 @@
             </p>
           </div>
           <div class="img-cta"><img src="https://img.freepik.com/free-vector/travel-time-typography-design_1308-90739.jpg?w=900&t=st=1706737440~exp=1706738040~hmac=d0b86c822560f5ad3c5a22d70eb05d691b463e0937c0e20c95793672cdd519d7" alt="cta-img"></div>
-          
-          <button class="btn btn-secondary cta-btn" id="show-login">Contact Us!</button>        
+         
 
         </div>
+      </section>
+
+
+      <!--===Contact From===-->
+      <section class="contact-form">
+        <div class="container">
+
+          <div class="form-div">
+            <div class="contact-in">
+              <div class="contact-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.77824487777!2d2.264634132455047!3d48.85893843512504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sbd!4v1706964390059!5m2!1sen!2sbd" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  
+              <div class="contact-form-section">
+  
+                <h1>Contact Us</h1>
+                <form>
+                  <input type="text" placeholder="Name" class="contact-form-txt" required/>
+                  <input type="email" placeholder="Email" class="contact-form-txt"  required/>
+                  <textarea placeholder="Message" class="contact-form-txtarea"></textarea>
+                  <input type="submit" name="Sub" class=" btn btn-secondary">
+  
+                </form>
+              </div>
+            </div>
+  
+          </div>
+          
+        </div>
+
       </section>
 
 
@@ -747,23 +774,23 @@
             <div class="container-number">
               
               <span class="num" data-val="200">000 </span>
-              <span class="text">Travel Destination</span>
+              <span class="text">Travel Destinations</span>
               <div class="number-icon"><ion-icon name="location-sharp"></ion-icon> </div>
               
             </div>
             <div class="container-number">
               <span class="num" data-val="80">000</span>
               <span class="text">Tour Guides</span>
-              <div class="number-icon"><ion-icon name="id-card"></ion-icon></div>
+              <div class="number-icon"><ion-icon name="people-sharp"></ion-icon></div>
             </div>
             <div class="container-number">
               <span class="num" data-val="250">000</span>
-              <span class="text">Hotels</span>
+              <span class="text">Hotel & Accomodation</span>
               <div class="number-icon"><ion-icon name="business-sharp"></ion-icon></div>
             </div>
             <div class="container-number">
               <span class="num" data-val="700">000</span>
-              <span class="text">Members</span>
+              <span class="text">Our Members</span>
               <div class="number-icon"><ion-icon name="earth"></ion-icon></div>
             </div>
             
@@ -866,10 +893,44 @@
             mollitia tenetur, aptent.
           </p>
 
-          <div class="blog-content">
+          <div class="blog-card-container">
+
+            <div class="blog-card">          
+              <img src="https://img.freepik.com/free-photo/wooden-bridge-koh-nangyuan-island-surat-thani-thailand_335224-1082.jpg?w=996&t=st=1706991708~exp=1706992308~hmac=ee7c5ce43b0d7db3982e97919c1e6287838765437151e583126574d2bd38f3ab" alt="woodenbridge">
+              <div class="blog-date"><span>18</span> February</div>
+              <div class="blog-card-content">
+                <h3>Wooden Bridge Thailand</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, unde, iusto similique deleniti tempore doloremque corrupti culpa voluptates animi eos inventore laborum? Totam voluptate dolor dolorum, vel eos provident. Blanditiis.</p>
+                <a href="" class="blog-btn">READ MORE <ion-icon name="arrow-forward" class="arrow"></ion-icon></a>
+              </div>
+            </div>
+
+            <div class="blog-card">          
+              <img src="https://img.freepik.com/free-photo/view-ancient-roman-empire-colosseum_23-2150912941.jpg?t=st=1706992131~exp=1706995731~hmac=6756bd20855fc508f53d81106791c31ca514920313ac52cf46ad6d220defe085&w=740" alt="italy">
+              <div class="blog-date"><span>02</span>January</div>
+              <div class="blog-card-content">
+                <h3>Ancient Roman Empire </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, unde, iusto similique deleniti tempore doloremque corrupti culpa voluptates animi eos inventore laborum? Totam voluptate dolor dolorum, vel eos provident. Blanditiis.</p>
+                <a href="" class="blog-btn">READ MORE <ion-icon name="arrow-forward" class="arrow"></ion-icon></a>
+              </div>
+            </div>
+
+            <div class="blog-card">          
+              <img src="https://img.freepik.com/premium-photo/beautiful-view-phi-phi-island-located-thailand_265989-10048.jpg" alt="phi phi island">
+              <div class="blog-date"><span>14</span> March</div>
+              <div class="blog-card-content">
+                <h3>Phi Phi Island</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, unde, iusto similique deleniti tempore doloremque corrupti culpa voluptates animi eos inventore laborum? Totam voluptate dolor dolorum, vel eos provident. Blanditiis.</p>
+                <a href="" class="blog-btn">READ MORE <ion-icon name="arrow-forward" class="arrow"></ion-icon></a>
+              </div>
+            </div>
+
+
+          </div>
+
 
             
-          </div>
+          
 
         </div>
 
