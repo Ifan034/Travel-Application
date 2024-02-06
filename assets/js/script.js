@@ -39,6 +39,13 @@ window.addEventListener("scroll", function () {
 
 });
 
+
+/* Preloader website */
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+
+
 /* typewriter Text header */
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -135,9 +142,9 @@ const testimonials = [
   },
 ];
 
-//Current Slide
+
 let i = 0;
-//Total Slides
+
 let j = testimonials.length;
 
 let testimonialContainer = document.getElementById("testimonial-container");
