@@ -116,7 +116,7 @@ html {
 body { background: var(--white); }
 
 
-
+/*For mbl screen overflow hidden*/
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -127,6 +127,7 @@ only screen and (min-device-pixel-ratio: 1.5){
   body{
     width:100%;
     overflow-x:hidden;
+    scroll-behavior: smooth;
   }
 
 }
@@ -278,13 +279,15 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 
 .section-subtitle {
-  color: var(--gray);
-  font-size: var(--fs-4);
+  color: var(--gray-light);
+  font-size: .8em;
   font-weight: var(--fw-600);
   text-transform: uppercase;
-  font-family: var(--ff-playfair);
+  font-family: var(--ff-sourcesans);
   margin-bottom: 8px;
 }
+
+
 
 .section-title {
   color: var(--dark);
@@ -667,7 +670,7 @@ only screen and (min-device-pixel-ratio: 1.5){
   background-blend-mode: overlay;
   display: grid;
   place-items: center;
-  min-height: 800px;
+  min-height: 865px;
   text-align: center;
   padding-top: 125px;
   position: relative;
@@ -689,7 +692,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 .hero-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   color: var(--white);
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
@@ -741,7 +744,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 /* Search For DestiNation */
 .tour-search {
   padding-block: 0;  
-  margin-top: -550px;
+  margin-top: -540px;
   margin-bottom: 12px;
   z-index: 9999;
 
@@ -1200,10 +1203,12 @@ img {
 
 
 /* Popular Packages */
-.popular { 
+.popular-tour { 
   padding-block: var(--section-padding);
   background: var(--white);
+  
 }
+
 
 
 
@@ -1415,10 +1420,16 @@ img {
 
 .popular-card .card-title { margin-bottom: 5px; }
 
-.popular-card :is(.card-subtitle, .card-title) > a { color: inherit; }
+.popular-card :is(.card-subtitle, .card-title) > a {
+  color: inherit; 
+  
+}
 
+.popular-tour .section-subtitle{
+  font-size: .8em !important; 
+} 
 
-.popular .btn { margin-inline: auto; }
+.popular-tour .btn { margin-inline: auto; }
 
 
 
@@ -1729,7 +1740,7 @@ span.text {
   cursor: pointer;
 }
 button#next {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   right: 60px;
   color: var(--green-light);
   font-size: 25px;
@@ -1749,7 +1760,7 @@ button#next {
 
 
 button#prev {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   left: 60px;
   color: var(--green-light);
   font-size: 25px;
@@ -1869,6 +1880,7 @@ button#prev {
 /* Blog Post Section*/
 .blog {
   padding-block: var(--section-padding);
+  
 }
 
 .blog-card-container{
@@ -1993,6 +2005,10 @@ button#prev {
 }
 
 @media screen and (min-width: 768px) {
+  .blog {
+    margin-bottom: 60px;
+  }
+
   .blog-card {
     width: 325px;
     height: 440px;
@@ -2226,7 +2242,7 @@ address {
     --padding: 12px 30px;
   }
 
-  section:not(.cta) :is(.section-subtitle, .section-title, .section-text) {
+  section:not(.cta) :is(.section-subtitle, .section-title, .section-text, .subtitle) {
     text-align: center;
   }
 
@@ -2636,14 +2652,6 @@ address {
   .popular-card {
     height: 510px;
   }
-
-
-
-  /* Tour Package small buttons */
-  .meta-box { --fs-8: 13px; }
-
-  .meta-box > ion-icon { font-size: 15px; }
-
 
 
   /* CTA */
