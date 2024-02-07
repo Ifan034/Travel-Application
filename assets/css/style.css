@@ -115,7 +115,6 @@ html {
 
 body { background: var(--white); }
 
-
 /*For mbl screen overflow hidden*/
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -127,6 +126,7 @@ only screen and (min-device-pixel-ratio: 1.5){
   body{
     width:100%;
     overflow-x:hidden;
+    overflow-y: auto;
     scroll-behavior: smooth;
   }
 
@@ -279,15 +279,13 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 
 .section-subtitle {
-  color: var(--gray-light);
-  font-size: .8em;
+  color: var(--gray);
+  font-size: var(--fs-4);
   font-weight: var(--fw-600);
   text-transform: uppercase;
-  font-family: var(--ff-sourcesans);
+  font-family: var(--ff-playfair);
   margin-bottom: 8px;
 }
-
-
 
 .section-title {
   color: var(--dark);
@@ -309,126 +307,6 @@ only screen and (min-device-pixel-ratio: 1.5){
 }
 
 /*<-----------------------O----------------------->*/
-
-/* PreLoader */
-.loader-wrapper {
-  --line-width: 5px;
-  --curtain-color: #f1faee;
-  --outer-line-color: #a8dadc;
-  --middle-line-color: #457b9d;
-  --inner-line-color: #1d3557;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  z-index:1000;
-}
-
-.loader {
-  display:block;
-  position: relative;
-  top:50%;
-  left:50%;
-  width:150px;
-  height:150px;
-  margin:-75px 0 0 -75px;
-  border:var(--line-width) solid transparent;
-  border-top-color: var(--outer-line-color);
-  border-radius:100%;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-  z-index:1001;
-}
-
-.loader:before {
-  content:"";
-  position: absolute;
-  top:4px;
-  left:4px;
-  right:4px;
-  bottom:4px;
-  border:var(--line-width) solid transparent;
-  border-top-color: var(--inner-line-color);
-  border-radius:100%;
-  -webkit-animation: spin 3s linear infinite;
-          animation: spin 3s linear infinite;
-}
-
-.loader:after {
-  content:"";
-  position: absolute;
-  top:14px;
-  left:14px;
-  right:14px;
-  bottom:14px;
-  border:var(--line-width) solid transparent;
-  border-top-color: var(--middle-line-color);
-  border-radius:100%;
-  -webkit-animation: spin 1.5s linear infinite;
-          animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0%   { 
-    -webkit-transform: rotate(0deg); 
-      -ms-transform: rotate(0deg); 
-          transform: rotate(0deg);
-  }
-  100% { 
-    -webkit-transform: rotate(360deg); 
-      -ms-transform: rotate(360deg); 
-          transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0%   { 
-    -webkit-transform: rotate(0deg); 
-      -ms-transform: rotate(0deg); 
-          transform: rotate(0deg);
-  }
-  100% { 
-    -webkit-transform: rotate(360deg); 
-      -ms-transform: rotate(360deg); 
-          transform: rotate(360deg);
-  }
-}
-
-.loader-wrapper .loader-section {
-  position:fixed;
-  top:0;
-  background:var(--background-one);
-  width:51%;
-  height:100%;
-  z-index:1000;
-}
-
-.loader-wrapper .loader-section.section-left {
-  left:0
-}
-.loader-wrapper .loader-section.section-right {
-  right:0;
-}
-
-/* Loaded Styles */ 
-.loaded .loader-wrapper .loader-section.section-left {
-  transform: translateX(-100%);
-  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-}
-.loaded .loader-wrapper .loader-section.section-right {
-  transform: translateX(100%);
-  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-}
-.loaded .loader {
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-.loaded .loader-wrapper {
-  visibility: hidden;
-  transform:translateY(-100%);
-  transition: all .3s 1s ease-out;
-}
-
 
 
 
@@ -790,7 +668,8 @@ only screen and (min-device-pixel-ratio: 1.5){
   background-blend-mode: overlay;
   display: grid;
   place-items: center;
-  min-height: 865px;
+  overflow-x: hidden;
+  min-height: 800px;
   text-align: center;
   padding-top: 125px;
   position: relative;
@@ -812,7 +691,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 .hero-text {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   color: var(--white);
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
@@ -864,7 +743,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 /* Search For DestiNation */
 .tour-search {
   padding-block: 0;  
-  margin-top: -540px;
+  margin-top: -550px;
   margin-bottom: 12px;
   z-index: 9999;
 
@@ -1323,12 +1202,10 @@ img {
 
 
 /* Popular Packages */
-.popular-tour { 
+.popular { 
   padding-block: var(--section-padding);
   background: var(--white);
-  
 }
-
 
 
 
@@ -1540,16 +1417,10 @@ img {
 
 .popular-card .card-title { margin-bottom: 5px; }
 
-.popular-card :is(.card-subtitle, .card-title) > a {
-  color: inherit; 
-  
-}
+.popular-card :is(.card-subtitle, .card-title) > a { color: inherit; }
 
-.popular-tour .section-subtitle{
-  font-size: .8em !important; 
-} 
 
-.popular-tour .btn { margin-inline: auto; }
+.popular .btn { margin-inline: auto; }
 
 
 
@@ -1860,7 +1731,7 @@ span.text {
   cursor: pointer;
 }
 button#next {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   right: 60px;
   color: var(--green-light);
   font-size: 25px;
@@ -1880,7 +1751,7 @@ button#next {
 
 
 button#prev {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   left: 60px;
   color: var(--green-light);
   font-size: 25px;
@@ -2000,7 +1871,6 @@ button#prev {
 /* Blog Post Section*/
 .blog {
   padding-block: var(--section-padding);
-  
 }
 
 .blog-card-container{
@@ -2125,10 +1995,6 @@ button#prev {
 }
 
 @media screen and (min-width: 768px) {
-  .blog {
-    margin-bottom: 60px;
-  }
-
   .blog-card {
     width: 325px;
     height: 440px;
@@ -2362,7 +2228,7 @@ address {
     --padding: 12px 30px;
   }
 
-  section:not(.cta) :is(.section-subtitle, .section-title, .section-text, .subtitle) {
+  section:not(.cta) :is(.section-subtitle, .section-title, .section-text) {
     text-align: center;
   }
 
@@ -2722,7 +2588,7 @@ address {
   }
   .hero-title {
     width: 100%;
-    margin-top: -190px;
+    margin-top: -180px;
     color: var(--white);
     
   }
@@ -2772,6 +2638,14 @@ address {
   .popular-card {
     height: 510px;
   }
+
+
+
+  /* Tour Package small buttons */
+  .meta-box { --fs-8: 13px; }
+
+  .meta-box > ion-icon { font-size: 15px; }
+
 
 
   /* CTA */
