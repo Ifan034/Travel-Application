@@ -41,6 +41,12 @@ window.addEventListener("scroll", function () {
 
 
 /* Preloader website */
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden"; 
+  
+});
+
 
 
 
