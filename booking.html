@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyager</title>
+    
+    <!---===Adding favicon===--->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
+    
+    <!---===Css link===--->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/booking.css">
+    <!---===Icons Link===--->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!---===Font link===--->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Playfair+Display&family=Source+Sans+3&display=swap" rel="stylesheet">
+    
+    <!---===Google font link===--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+
+<body id="top">
+    
+    <!---===Preloader===--->
+    <div class="loader">
+        <img src="assets/images/preloader.gif" alt="Loading..." />
+    </div>
+
+
+    <!---===Header Start===---> 
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+        <div class="container">
+
+            <a href="tel:+8801631994465" class="helpline-box">
+
+            <div class="icon-box">
+                <ion-icon name="call"></ion-icon>
+            </div>              
+
+            <div class="wrapper">
+                <p class="helpline-title">Call Now : </p>
+                <p class="helpline-number">+8801829832168</p>
+            </div>
+
+            </a>
+
+
+            
+
+            <a href="#" class="logo">
+            <img src="./assets/images/logo.png" alt="Tourly logo">
+            <h3 class="brand-name">Voyager</h3>
+            </a>
+
+            <div class="header-btn-group">
+            <!--search box-->
+            <form action="" class="search-bar">
+                <input type="search" name="search" placeholder="  search..." required>
+                <button class="search-btn" aria-label="Search">
+                <ion-icon name="search"></ion-icon>
+                </button>
+            </form>
+
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            </div>
+
+        </div>
+        </div>
+
+        <div class="header-bottom">
+        <div class="container">
+
+            <ul class="social-list">
+
+            <li>
+                <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+
+            </ul>
+
+            <nav class="navbar" data-navbar>
+
+            <div class="navbar-top">
+
+                <a href="#" class="logo-mbl">
+                <img src="./assets/images/logo.png" alt="logo">
+                <h1 class="brand-name">Voyager</h1>
+                </a>
+
+                <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+            </div>
+
+            <ul class="navbar-list main-dropdown">
+
+                <li>
+                <a href="index.html" class="navbar-link" >Home</a>
+                </li>
+
+                <li>
+                <a href="about.html" class="navbar-link" >About</a>
+                </li>         
+                
+                <li><a href="#" class="navbar-link">Pages <ion-icon name="caret-down"></ion-icon></a>
+
+                <ul class="dropdown-content">
+                    <li><a href="blog.html" >Blog</a></li>
+                    <li><a href="testimonial.html" >Testimonial</a></li>
+                    <li><a href="popular.html" >Popular</a></li>
+                </ul>
+                </li>
+
+
+                <li>
+                <a href="destination.html" class="navbar-link" >Destination</a>
+                </li>
+
+                <li>
+                <a href="package.html" class="navbar-link" >Packages</a>
+                </li>
+
+                <li>
+                <a href="gallery.html" class="navbar-link" >Gallery</a>
+                </li>
+
+                <li>
+                <a href="contact.html" class="navbar-link" >Contact</a>
+                </li>
+
+            </ul>
+
+            </nav>
+
+            <a href="booking.html" class="btn btn-primary">Book Trip</a>
+
+        </div>
+        </div>
+
+    </header>
+    <!---===Header End===--->
+
+    <main>
+        <article>
+            <!---===Hero Section===--->
+            <section class="hero-two" id="home">
+              <div class="container">
+                <h2 class="h1 hero-title-booking">Package  Detail</h2>      
+              </div>
+            </section>
+
+            <!---===Booking Section===--->
+            <section class="tour-booking">
+                <div class="container">
+                    <div class="tour-booking-details">
+                        <div class="tour-details-left">
+
+                            <div class="tourname-price">
+                                <div class="tourname-details">
+                                    <p>Malé City, Maldives</p>
+                                    <h2>Maldives – 2 Days In Malé City </h2>
+                                </div>
+                                <div class="tourprice-details">
+                                    <p>From</p>
+                                    <h2>$273</h2>
+                                </div>
+                            </div>
+
+                            <div class="border"></div>
+                            
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, nostrum dolor at repellat praesentium esse ipsum adipisci a pariatur dolorum minus vel facilis molestias assumenda similique iure exercitationem asperiores sit doloribus culpa quia. Molestias illo nostrum similique quas ad, possimus accusamus harum recusandae dignissimos optio consequatur aliquid soluta voluptas dolore perspiciatis unde dolor natus ea, maxime provident a? Facere voluptate incidunt voluptatibus impedit neque illo. Cupiditate quam mollitia eum, voluptatum iusto dolorem rem nesciunt sapiente aliquam ratione corrupti officiis aspernatur, incidunt fugit aut eos sed reprehenderit consectetur tempore esse impedit iste voluptate. Nemo sed cumque doloribus, deleniti totam veniam alias!</h3>
+
+                        </div>
+
+                        <div class="tour-details-right">
+                            <div class="background-form">
+                                <div class="booking-form">
+                                    <h2>Travel Booking Form</h2>
+                                    <form action="payment.html" method="post" id="myForm">
+                                        
+                                        <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                            
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                            
+                                        <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
+                                        
+                                        <input type="text" name="destination" id="destination" placeholder="Your destination" required>
+
+                                        <input type="number" name="people" id="people" required placeholder="Number of people" class="input-field">
+
+                                        <input type="date" name="departure-date" id="departure-date" class="input-field" placeholder="Departure-date" required>
+                            
+                                        <input type="date" name="return-date" id="return-date" class="input-field" placeholder="Return-date" required>
+
+                                        <textarea id="message" placeholder="Message" class="contact-form-txtarea"></textarea>
+
+                            
+                                        <input type="submit" value="submit" class="btn btn-primary"></input>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </article>
+    </main>
+
+    <!---===FOOTER===--->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                <a href="#" class="logo-footer">
+                    <img src="./assets/images/logo.png" alt="Tourly logo">
+                    <h3 class="brand-name">Voyager</h3>
+                </a>
+
+                <p class="footer-text">
+                    Our curated packages are designed to fulfill your wanderlust dreams, offering a seamless blend of culture, adventure, and relaxation.
+                </p>
+
+                <ul class="social-list" data-aos="fade-left" data-aos-delay="300">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+        
+                </ul>
+
+                </div>
+
+                <div class="footer-contact"  data-aos="fade-left"
+                data-aos-delay="100">
+
+                <h4 class="contact-title">Contact Us</h4>
+
+                <p class="contact-text">
+                    Feel free to contact and reach us!
+                </p>
+
+                <ul>
+
+                    <li class="contact-item">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <a href="tel:+8801631994465" class="contact-link">+8801631994465</a>
+                    </li>
+
+                    <li class="contact-item">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <a href="mailto:info.tourly.com" class="contact-link">info.Voyager.com</a>
+                    </li>
+
+                    <li class="contact-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <address>Germany</address>
+                    </li>
+
+                </ul>
+
+                </div>
+
+
+
+                <div class="footer-contact" data-aos="fade-left" data-aos-delay="200">
+
+                <h4 class="contact-title">Usefull Links</h4>
+
+                <ul>
+
+                    <li class="contact-item">
+                        <a href="#" class="contact-link">Home</a>
+                    </li>
+
+                    <li class="contact-item">
+                        <a href="#about" class="contact-link">About Us</a>
+                    </li>
+
+                    <li class="contact-item">
+                        <a href="#destination" class="contact-link">Destination</a>
+                    </li>
+
+                    <li class="contact-item">
+                        <a href="#package" class="contact-link">Package list</a>
+                    </li>
+
+                    <li class="contact-item">
+                        <a href="#contact" class="contact-link">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                </div>
+
+
+                
+                <div class="footer-form" data-aos="fade-left" data-aos-delay="200">
+
+                <p class="form-text">
+                    Subscribe our newsletter!
+                </p>
+
+                <form action="" class="form-wrapper">
+                    <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                &copy; 2024 <a href="#">Ifan</a>. All rights reserved
+                </p>
+
+                <ul class="footer-bottom-list" >
+
+                <li>
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-bottom-link">Term & Condition</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-bottom-link">FAQ</a>
+                </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!---===GO UP===--->
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="arrow-up-sharp"></ion-icon>
+    </a>
+
+
+    <!---===Custom Javascript link===--->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/booking.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,175 @@
+@import url("style.css");
+
+
+
+
+.hero-two {
+    background-image: url("../images/hero-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsla(40, 80%, 5%, 0.7);
+    background-blend-mode: overlay;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    min-height: 500px;
+    text-align: center;
+    padding-top: 125px;
+    position: relative;
+    z-index: -1;
+}
+
+
+.hero-title-booking {
+    color: var(--white);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-600);
+    font-family: var(--ff-sourcesans);
+    transform: uppercase;
+    text-align: center;
+  }
+
+
+/*<-----------------------O----------------------->*/
+
+
+/*Tour Booking Section*/
+
+.tour-booking {
+    padding-block: var(--section-padding);  
+    background: var(--white);
+}
+
+.tour-booking-details {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.tour-details-left{
+    flex: 70%;
+}
+
+.tour-details-right{
+    flex: 30%;
+}
+
+
+
+.tour-details-left p{
+    color: var(--gray);
+    font-family: var(--ff-playfair);
+    font-size: 1em;
+}
+
+.tour-details-left h2 {
+    font-size: 2em;
+}
+
+
+
+
+.background-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.booking-form{
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.3);
+    padding: 20px;
+}
+
+
+.booking-form h2{
+    text-align: center;
+    margin-bottom: 15px;
+   
+}
+.booking-form form{
+    display: flex;
+    flex-direction: column;
+}
+.booking-form input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.booking-form .contact-form-txtarea{
+    font-size: .9em;
+}
+
+.booking-form button{
+    margin-top:15px;
+    padding: 10px;
+
+}
+
+.booking-form .input-field::-webkit-datetime-edit {
+    color: var(--gray);    
+}
+
+.tourname-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tourprice-details{
+    margin-right: 12px;
+    color: var(--orrange-dark);
+    
+}
+
+.border {
+    border-bottom: 1px solid var(--gainsboro);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px){
+    .tour-booking-details{
+        flex-direction: column;
+    }
+
+    .tour-details-right{
+        width: 100%;
+        height: auto;
+    }
+
+    .booking-form input{
+        margin-bottom: 15px;
+    }
+
+    .tourname-price{
+        flex-direction: column;
+    }
+}
+
+/*<-----------------------O----------------------->*/
+
+
+
