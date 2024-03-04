@@ -47,7 +47,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
+    align-items: center; 
     justify-content: space-between;
 }
 
@@ -87,7 +87,7 @@
     border-radius: 3px;
     width: 100%;
     margin-top: 20px;
-    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.3);
     padding: 20px;
 }
 
@@ -145,12 +145,14 @@
 .tour-duration-details {
     display: flex;
     justify-content: space-around;
+    margin-right: 150px;
+
+   
 }
 
 .duration {
     display: inline-flex;
     align-items: center;
-    
     
 }
 
@@ -161,6 +163,7 @@
 .duration .icon-spacing {
     margin-right: 5px;
 }
+
 
 .tour-duration h3 {
     font-size: 1.2em;
@@ -189,12 +192,16 @@
 
 
 .slider {
-    width: 95%;
+    width: 96%;
     height: 500px;
     margin: auto;
     position: relative;
     overflow: hidden;
     margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    margin-right: 50px;
+
 }
 .slider .list{
     position: absolute;
@@ -210,6 +217,7 @@
     max-width: 100vw;
     height: 100%;
     object-fit: cover;
+    justify-content: flex-start;
 }
 .slider .buttons{
     position: absolute;
@@ -229,6 +237,20 @@
     font-family: monospace;
     font-weight: bold;
 }
+
+#prevButton:hover {
+    backdrop-filter: blur(.5px);
+    -webkit-backdrop-filter: blur(.5px);
+    color: var(--blue-light);
+}
+
+#nextButton:hover {
+    backdrop-filter: blur(.5px);
+    -webkit-backdrop-filter: blur(.5px);
+    color: var(--blue-light);
+}
+
+
 .slider .dots{
     position: absolute;
     bottom: 10px;
@@ -252,13 +274,43 @@
 .slider .dots li.active{
     width: 30px;
 }
+
+
 @media screen and (max-width: 768px){
     .slider{
         width: 100%;
-        height: 300px;
+        height: 350px;
     }
 }
 
+
+.tour-description .description {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.tour-description .spacing-icon {
+    margin-right: 10px;
+
+}
+
+.tour-description h3 {
+    font-size: 1.2em;
+}
+
+.tour-description ion-icon {
+    color: var(--orrange-light);
+}
+
+.tour-description p {
+    width: 98%;
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+    
+}
   
 
 
@@ -282,6 +334,7 @@
 
     .tour-duration-details {
         flex-direction: column;
+        margin-right: 0;
     }
 
     .tour-duration h3 {

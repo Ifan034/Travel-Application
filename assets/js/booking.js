@@ -11,8 +11,8 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   /* img slider */
   let slider = document.querySelector('.slider .list');
   let items = document.querySelectorAll('.slider .list .item');
-  let next = document.getElementById('next');
-  let prev = document.getElementById('prev');
+  let next = document.getElementById('nextButton');
+  let prev = document.getElementById('prevButton');
   let dots = document.querySelectorAll('.slider .dots li');
   
   let lengthItems = items.length - 1;
@@ -25,7 +25,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
       active = active - 1 >= 0 ? active - 1 : lengthItems;
       reloadSlider();
   }
-  let refreshInterval = setInterval(()=> {next.click()}, 5000);
+  let refreshInterval = setInterval(()=> {next.click()}, 9000);
   function reloadSlider(){
       slider.style.left = -items[active].offsetLeft + 'px';
       // 
@@ -34,7 +34,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
       dots[active].classList.add('active');
   
       clearInterval(refreshInterval);
-      refreshInterval = setInterval(()=> {next.click()}, 5000);
+      refreshInterval = setInterval(()=> {next.click()}, 9000);
   
       
   }
