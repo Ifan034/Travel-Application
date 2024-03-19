@@ -49,4 +49,10 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
       reloadSlider();
   };
 
+  //popup js
+  function togglePopup() { 
+    const overlay = document.getElementById('popupOverlay'); 
+    overlay.classList.toggle('show'); 
+} 
+
 

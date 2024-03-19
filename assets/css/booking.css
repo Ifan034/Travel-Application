@@ -1,8 +1,6 @@
 @import url("style.css");
 
 
-
-
 .hero-two {
     background-image: url("../images/hero-banner.jpg");
     background-repeat: no-repeat;
@@ -28,7 +26,15 @@
     font-family: var(--ff-sourcesans);
     transform: uppercase;
     text-align: center;
-  }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-two {
+        min-height: 300px;
+
+    }
+}
+
 
 
 /*<-----------------------O----------------------->*/
@@ -71,7 +77,22 @@
     font-size: 2em;
 }
 
+.star-tourname {
+    display: inline-flex;
+    align-items: center;
+}
 
+.star-tourname h3 {
+    color: var(--green-light);
+    
+}
+
+.star-tourname p{
+    margin-left: 8px;
+    font-size: .8em;
+    text-align: center;
+    
+}
 
 
 .background-form{
@@ -84,17 +105,51 @@
 .booking-form{
     background-color: rgba(255,255,255,0.7);
     padding: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 100%;
-    margin-top: 20px;
     box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.3);
     padding: 20px;
+    margin-top: -300px;
+}
+.price-tag-form{
+    display: inline-flex;
+    margin-right: 10px; 
+    align-items: center;
+    justify-content: center;
 }
 
+.price-tag-form ion-icon {
+    color: var(--orrange-light);
+    font-size: 1.3em;
+    font-weight: var(--fw-700);
+
+}
+
+.price-tag-form h4 {
+    display: inline-flex;
+    margin-left: 10px;
+    color: var(--gray-light);
+}
+
+.dollar-tag {
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+
+.price-tag-form h3{
+    margin-left: 12px;
+    font-size: 1.5em;
+    font-weight: var(--fw-800);
+}
+
+.booking-form p{
+    margin-bottom: 15px;
+
+}
 
 .booking-form h2{
-    text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+   
    
 }
 .booking-form form{
@@ -104,7 +159,7 @@
 .booking-form input{
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
 
@@ -113,7 +168,7 @@
 }
 
 .booking-form button{
-    margin-top:15px;
+    margin-top: 15px;
     padding: 10px;
 
 }
@@ -124,15 +179,10 @@
 
 .tourname-price {
     display: flex;
-    justify-content: space-between;
 }
 
 
-.tourprice-details{
-    margin-right: 12px;
-    color: var(--orrange-dark);
-    
-}
+
 
 .border {
     border-bottom: 1px solid var(--gray-light);
@@ -145,15 +195,19 @@
 .tour-duration-details {
     display: flex;
     justify-content: space-around;
-    margin-right: 150px;
+    align-items: center;
 
-   
 }
 
 .duration {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    margin-bottom: 20px;
     
+}
+
+.duration p {
+    line-height: 1.6;
 }
 
 .duration ion-icon {
@@ -171,24 +225,6 @@
     border-right: 1px solid var(--gray-light);
 }
 
-.review-star {
-    display: flex;  
-    color: var(--orrange-light);
-    font-size: 1.2em;
-    text-align: center;
-}
-
-.review-star .review{
-    font-size: .7em; 
-    text-align: center;
-    margin-top: 6px;
-    margin-left: 3px;
-}
-
-.review:is(:hover, :focus) {
-    color: var(--green-light);
-    cursor: pointer;
-  }
 
 
 .slider {
@@ -241,13 +277,13 @@
 #prevButton:hover {
     backdrop-filter: blur(.5px);
     -webkit-backdrop-filter: blur(.5px);
-    color: var(--blue-light);
+    color: var(--gunmetal);
 }
 
 #nextButton:hover {
     backdrop-filter: blur(.5px);
     -webkit-backdrop-filter: blur(.5px);
-    color: var(--blue-light);
+    color: var(--gunmetal);
 }
 
 
@@ -266,7 +302,7 @@
     list-style: none;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: var(--light);
     margin: 10px;
     border-radius: 20px;
     transition: 0.5s;
@@ -275,13 +311,162 @@
     width: 30px;
 }
 
-
-@media screen and (max-width: 768px){
-    .slider{
-        width: 100%;
-        height: 350px;
-    }
+.question-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: 20px;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 18px;
+    border-radius: 5px;
 }
+
+.question-section p {
+    color: var(--dark);
+    font-size: .9em;
+}
+
+.download-brochure {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.download-brochure ion-icon {
+    color: var(--orrange-light);
+    margin-right: 8px;
+    font-size: 1.3em;
+    font-weight: var(--fw-600);
+}
+
+.download-brochure h5 {
+    font-size: 1em;
+    font-weight: var(--fw-600);
+    color: var(--gray);
+    
+}
+
+
+
+.ask-question {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ask-question ion-icon {
+    color: var(--orrange-light);
+    margin-right: 8px;
+    font-size: 1.3em;
+    font-weight: var(--fw-600);
+}
+
+.ask-question h5 {
+    font-size: 1em;
+    font-weight: var(--fw-600);
+    color: var(--gray);
+    
+}
+
+.popup-container{ 
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center; 
+} 
+
+
+.overlay-container-popup { 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.6); 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    z-index: 100010;
+} 
+
+.popup-box { 
+    background: #fff; 
+    padding: 24px; 
+    border-radius: 12px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+    width: 320px; 
+    text-align: center; 
+    opacity: 0; 
+    /* transform: scale(0.8); 
+    animation: fadeInUp 0.5s ease-out forwards;  */
+} 
+
+.form-container { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.form-label { 
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    color: #444; 
+    text-align: left; 
+} 
+
+.form-input { 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    width: 100%; 
+    box-sizing: border-box; 
+} 
+
+
+.btn-close-popup { 
+    color: var(--dark); 
+    font-size: 1.5em;
+    font-weight: var(--fw-700);
+    margin-left: auto; /* Aligns the close button to the right */
+    padding: 5px; 
+    border: 1px solid transparent; /* Set a specific border style */
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Include border in the transition */
+} 
+
+.btn-close-popup:hover { 
+    background-color: var(--light);  
+}
+
+/* Keyframes for fadeInUp animation 
+@keyframes fadeInUp { 
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}  */
+
+/* Animation for popup */ 
+.overlay-container-popup.show { 
+    display: flex; 
+    opacity: 1; 
+} 
+
+
+
+/* @media screen and (max-width: 768px){
+
+} */
 
 
 .tour-description .description {
@@ -315,6 +500,12 @@
 
 
 @media only screen and (max-width: 991px){
+
+    .slider{
+        width: 100%;
+        height: 350px;
+    }
+
     .tour-booking-details{
         flex-direction: column;
     }
@@ -324,32 +515,64 @@
         height: auto;
     }
 
+    .booking-form {
+        margin-top: 45px;
+    }
+
     .booking-form input{
         margin-bottom: 15px;
+    }
+
+    .booking-form h2 {
+        border-bottom: none;
+        margin-bottom: 30px;
     }
 
     .tourname-price{
         flex-direction: column;
     }
 
+    .tourname-details p {
+        font-size: .8em;
+        margin-bottom: 5px;
+    }
+
+    .tourname-details h2{
+        font-size: 1.1em;
+    }
+
     .tour-duration-details {
         flex-direction: column;
         margin-right: 0;
+        margin-left: 0;
+        align-items: flex-start;
     }
 
-    .tour-duration h3 {
-        border-right: none;
-        border-bottom: 1px solid var(--gray-light);
-        margin-bottom: 25px;
-        padding-bottom: 10px;
+    .star-tourname p{
+        margin-top: 5px;
         
     }
 
-    .review-star {
-        border-bottom: 1px solid var(--gray-light);
-        margin-bottom: 25px;
-        padding-bottom: 10px;
+    .duration p {
+        font-size: .8em;
     }
+
+    .question-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .question-section p{
+        margin-bottom: 12px;
+    }
+
+    .download-brochure {
+        margin-bottom: 8px;
+    }
+
 
 }
 
