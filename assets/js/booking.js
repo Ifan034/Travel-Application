@@ -51,8 +51,19 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
   //popup js
   function togglePopup() { 
-    const overlay = document.getElementById('popupOverlay'); 
+    const overlay = document.getElementById('your-popup-id'); 
     overlay.classList.toggle('show'); 
-} 
+
+  }
+
+  function togglePopupTwo() { 
+    const overlay = document.getElementById('your-popup-id-two'); 
+    overlay.classList.toggle('show'); 
+
+  } 
+
+
+
+
 
 

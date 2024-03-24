@@ -12,6 +12,7 @@
   --gainsboro: hsl(0, 0%, 88%);
   --cultured: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
+  --white-light: hsl(0, 0% , 99%); 
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 25%);
   --jet: hsl(0, 0%, 20%);
@@ -32,6 +33,7 @@
   --light: hsl(0, 0% , 87%);
   --dark: hsl(180, 100% , 7%);
   --dark-light: hsl(211, 33% , 15%);
+  --star: hsl(48, 85% , 43%);
   --background-one:  hsl(168, 16% , 94%);
   --background-two:  hsl(312, 16% , 94%);
   --background-three:  hsl(240, 16% , 94%);
@@ -1315,7 +1317,7 @@ img {
 
 
 .popular-card .card-rating {
-  color: var(--green-light);
+  color: #CCA711;
   position: absolute;
   top: 28px;
   right: 25px;
@@ -1827,14 +1829,14 @@ button#prev {
   
 }
 .testimonial-container h3 {
-  color: var(--orrange-light);
+  color: var(--green-light);
   font-size: 1.2em;
   text-align: center;
   font-family: var(--ff-sourcesans);
   
 }
 .testimonial-container h5 {
-  color: var(--gray-light);
+  color: var(--gray);
   font-size: 0.9em;
   letter-spacing: 0.03em;
   font-weight: var(--fw-600);
@@ -1844,7 +1846,7 @@ button#prev {
 }
 
 .testimonial-container h6 {
-  color: var(--green-light);
+  color: var(--star);
   padding: 5px;
   font-size: 0.8em;
   letter-spacing: 0.03em;
