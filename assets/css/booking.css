@@ -66,6 +66,7 @@
 .tour-details-right{
     flex: 30%;
     flex-direction: column;
+    margin-top: 10px;
     
 
 }
@@ -117,8 +118,8 @@
     background: var(--white);
     color: var(--gray);
     font-size: .8em;
-    font-weight: var(--fw-400);
-    padding: 5px 15px;
+    font-weight: var(--fw-500);
+    padding: 7px 15px;
     boder: 5px solid transparent;
     border-radius: 5px;
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
@@ -128,8 +129,10 @@
 
 .tag-one:hover {
     background: var(--white-light);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    transition: opacity 0.3s ease;
     cursor: pointer;
+    color: var(--gunmetal);
+
 }
 
 
@@ -219,7 +222,6 @@
     border: 1px solid transparent;
     border-radius: 3px;
     width: 100%;
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
 
     
 }
@@ -635,9 +637,9 @@
     background:none!important;
     width:95%;
     height:460px; 
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-    border-radius: 1px; 
-    border: 5px solid var(--background-one);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
+    border-radius: 3px; 
+    border: 3px solid var(--gray);
     
 }
 .gmap_iframe {
@@ -702,6 +704,12 @@
 
 @media only screen and (max-width: 991px){
 
+    .tour-details-right {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
     .listing-tags {
         justify-content: flex-start;
         align-items: flex-start;
@@ -734,12 +742,7 @@
     .tour-booking-details{
         flex-direction: column;
     }
-
-    .tour-details-right{
-        width: 100%;
-        height: auto;
-        
-    }
+    
 
     .booking-form {
         margin-top: 45px;
@@ -807,6 +810,384 @@
 }
 
 /*<-----------------------O----------------------->*/
+
+
+
+
+
+/*Itenary Section*/
+
+.itenary-container {
+    margin-bottom: 45px;
+}
+
+.accordion {
+    background-color: var(--white-light);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 3px;
+  }
+
+ .accordion h3 {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: var(--fw-700)
+  }
+
+  .accordion .accordion-text {
+    margin-left: 15px;
+    font-weight: var(--fw-400);
+    color: var(--gunmetal);
+    font-size: 1em; 
+
+  }
+
+  
+  .active, .accordion:hover {
+    background-color: var(--light); 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  .image-container-panel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel img {
+    width: 100%;
+    height: 200px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
+
+  }
+
+
+
+  .panel p {
+    font-size: .8em; 
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    line-height: 1.6;
+    margin-bottom: 10px;
+
+  }
+
+
+  @media only screen and (min-width: 580px) {
+    .image-container-panel {
+        flex-direction: column;
+    }
+
+    .panel p {
+        width: 100%;
+        height: 100%;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+
+    .panel img {
+        width: 100%;
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .accordion h3 {
+        font-size: 1.2em;
+    }
+
+    .panel img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .panel p {
+        font-size: 1em;
+    }
+  }
+
+  @media only screen and (min-width: 991px) {
+    .image-container-panel {
+        flex-direction: row;
+    }
+
+    .panel img {
+        width: 400px;
+        height: 300px;
+        margin-right: 20px;
+    }
+
+    .panel p {
+        width: 500px;
+        height: 100%;
+        line-height: 1.7;
+    }
+  }
+
+/*<-----------------------O----------------------->*/
+
+
+
+
+
+/* Whats include page*/
+
+.include-element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid  var(--light);
+    padding: 8px;
+}
+
+.include-element-two {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid  var(--light);
+    padding: 8px;
+}
+
+.include-element-two:last-child {
+    border-bottom: none; 
+}
+
+.include-element ion-icon {
+    color: var(--green-light);
+    margin-right: 8px;
+    font-size: 1.2em;
+    font-weight: var(--fw-600);
+}
+
+.include-element-two ion-icon {
+    color: var(--red-light);
+    margin-right: 8px;
+    font-size: 1.2em;
+    font-weight: var(--fw-600);
+
+
+}
+
+.include-element p {
+    font-size: 1em;
+}
+
+.include-element-two p {
+    font-size: 1em;
+}
+
+/*<-----------------------O----------------------->*/
+
+
+/* Rating Card Reviews */
+
+.rating-card-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: var(--white-light);
+    margin-bottom: 2px;
+    width: 70%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+
+
+.rating-card-reviews:last-child {
+    margin-bottom: 30px;
+}
+
+.rating-card-content {
+    display: flex;
+    align-items: center;
+}
+
+.rating-card-content ion-icon {
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: var(--green-light);
+}
+
+.rating-text h4 {
+    font-size: .9em;
+}
+
+.rating-text p {
+    font-size: .7em;
+
+}
+
+.rating-text-two h4 {
+    font-size: .9em;
+
+}
+
+.rating-text-two {
+    display: flex;
+    align-items: center;
+}
+
+.rating-text-two ion-icon {
+    color: var(--star);
+    font-size: .8em;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .rating-card-reviews {
+        width: 100%;
+    }
+}
+
+
+/*<-----------------------O----------------------->*/
+
+
+
+
+/*User Review System*/
+
+.profile-main-container {
+    margin-top: 20px; 
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.profile-name-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+
+.profile-pic {
+    background: var(--white-light);
+    padding: 5px 14px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-pic p {
+    color: var(--gray-light);
+    text-align: center;
+    
+}
+
+.name-star {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.star-flex {
+    display: flex;
+    align-items: center;
+}
+
+.star-flex ion-icon {
+    font-size: .6em;
+    color: var(--star);
+}
+
+.date-year p{
+    font-size: .7em;
+}
+
+.review-comment {
+    border-bottom: 1px solid var(--light);
+    padding: 15px 3px;
+}
+
+
+.review-comment .review-comment-paragraph p{
+    font-size: .8em;
+    color: var(--dark);
+}
+
+@media only screen and (max-width: 991px) {
+    .profile-main-container {
+        width: 100%;
+    }
+}
+
+
+
+/*<-----------------------O----------------------->*/
+
+
+
+/* FAQ */
+
+.faq-container{ 
+    margin-bottom: 30px;
+}
+
+.accordion-text-faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3em;
+    font-weight: var(--fw-500);
+    
+}
+
+.panel-faq {
+    padding: 0 15px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+   
+}
+
+.panel-faq p {
+    font-size: .9em;
+    line-height: 1.6;
+    word-spacing: 0.1em; 
+    
+    
+}
+
+
+
+
+
+
+
 
 
 
