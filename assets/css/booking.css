@@ -116,13 +116,13 @@
 
 .listing-tags .tag-one {
     background: var(--white);
-    color: var(--gray);
+    color: var(--dark-light);
     font-size: .8em;
     font-weight: var(--fw-500);
     padding: 7px 15px;
-    boder: 5px solid transparent;
-    border-radius: 5px;
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
+    boder: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
     margin-right: 20px;
     font-family: var(--ff-opensans);
 }
@@ -131,7 +131,7 @@
     background: var(--white-light);
     transition: opacity 0.3s ease;
     cursor: pointer;
-    color: var(--gunmetal);
+    color: var(--dark-light);
 
 }
 
@@ -278,6 +278,7 @@
 .get-a-questions p {
     margin-bottom: 20px;
     color: var(--white);
+    font-size: 1em;
 
 }
 
@@ -290,11 +291,19 @@
 .book-us-icon-two ion-icon {
     margin-right: 8px;
     color: var(--orrange-light);
+    font-size: 1em;
 
 }
 
 .book-us-icon-two h5{
     color: var(--white);
+    .book-us-icon-two ion-icon {
+    margin-right: 8px;
+    color: var(--orrange-light);
+    font-size: 1em;
+    
+    }
+    
     
 }
 
@@ -401,7 +410,7 @@
     height: 50px;
     border-radius: 50%;
     background-color: #fff5;
-    color: #fff;
+    color: var(--light);
     border: none;
     font-family: monospace;
     font-weight: bold;
@@ -410,13 +419,13 @@
 #prevButton:hover {
     backdrop-filter: blur(.5px);
     -webkit-backdrop-filter: blur(.5px);
-    color: var(--gunmetal);
+    color: var(--white);
 }
 
 #nextButton:hover {
     backdrop-filter: blur(.5px);
     -webkit-backdrop-filter: blur(.5px);
-    color: var(--gunmetal);
+    color: var(--white);
 }
 
 
@@ -721,7 +730,7 @@
     }
 
     .tag-one:last-child {
-        border-bottom: 0;
+        margin-bottom: 0;
     }
     
 
@@ -1159,9 +1168,13 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.3em;
     font-weight: var(--fw-500);
-    
+    color: var(--gunmetal);
+    font-size: 1.2em; 
+}
+
+.accordion-text-faq {
+
 }
 
 .panel-faq {
@@ -1175,7 +1188,7 @@
 }
 
 .panel-faq p {
-    font-size: .9em;
+    font-size: .8em;
     line-height: 1.6;
     word-spacing: 0.1em; 
     
@@ -1183,7 +1196,17 @@
 }
 
 
+@media screen and (max-width: 991px){
 
+    .accordion-text-faq {
+        font-size: 1em;
+    }
+
+    .panel-faq p {
+       font-size: .8em;
+
+    }
+}
 
 
 
