@@ -15,10 +15,11 @@
     <!---===Icons Link===--->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <!---===Font link===--->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Playfair+Display&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <!---===Font link===--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Playfair+Display&family=Source+Sans+3&display=swap" rel="stylesheet">
     
     <!---===Google font link===--->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -989,58 +990,46 @@
 
 
 
-            <!-- ===Customer Img Section===
+            <!--===Customer Img Section===-->
             <section>
                 <div class="container">
-
-                    <div class="img-container-main_img">
-                        <span class="slider-1_img" id="slider-1_img"></span>
-                        <span class="slider-_img" id="slider-2_img"></span>
-                        <span class="slider-3_img" id="slider-3_img"></span>
-                        <span class="slider-4_img" id="slider-4_img"></span>
-                        <span class="slider-5_img" id="slider-5_img"></span>
-                        <span class="slider-6_img" id="slider-6_img"></span>
-                        <span class="slider-7_img" id="slider-7_img"></span>
-                
-                        <div class="img-Container">
-                
-                           <div class="slide_div_img" id="slide_1_img">
-                            <img src="./story_images/a61.jpg" alt="" class="img" id="img1">
-                            <a href="#slider1" class="button" id="button1"></a>
-                           </div>
-
-                           <div class="slide_div_img" id="slide_2_img">
-                            <img src="./story_images/a70.jpg" alt="" class="img" id="img2">
-                            <a href="#slider2_img" class="button_img" id="button2_img"></a>
-                           </div>
-
-                           <div class="slide_div_img" id="slide_3_img">
-                            <img src="./story_images/a63.jpg" alt="" class="img" id="img3">
-                            <a href="#slider3_img" class="button_img" id="button3_img"></a>
-                           </div>
-
-                           <div class="slide_div_img" id="slide_4_img">
-                            <img src="./story_images/a72.jpeg" alt="" class="img" id="img4">
-                            <a href="#slider4_img" class="button_img" id="button4"></a>
-                           </div>
-
-                           <div class="slide_div" id="slide_5">
-                            <img src="./story_images/a67.jpg" alt="" class="img" id="img5">
-                            <a href="#slider5_img" class="button_img" id="button5"></a>
-                           </div>
-
-                           <div class="slide_div_img" id="slide_6_img">
-                            <img src="./story_images/a66.jpg" alt="" class="img" id="img6">
-                            <a href="#slider6_img" class="button_img" id="button6_img"></a>
-                           </div>
-                         
-                       
+                    <div class="customer-container">
+                        <div class="maprouter-description">
+                            <ion-icon name="camera"></ion-icon>
+                            <h3>Travellers Images : </h3>
                         </div>
-                        
-                    </div>
+
+                        <div class="slider-wrapper">
+                          <button id="prev-slide" class="slide-button material-symbols-rounded">
+                            chevron_left
+                          </button>
+                          <ul class="image-list">
+                            <img class="image-item" src="https://images.unsplash.com/photo-1561364237-3443f2de9c7a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img-1" />
+                            <img class="image-item" src="https://www.germany-visa.org/wp-content/uploads/2022/02/Tourist-photographing-Brandenburg-gate-Berlin.jpg" alt="img-2" />
+                            <img class="image-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwRILoMFIdX84laBaaIlz4AXjDMKo3xxrtbwrNxKU_XF2rTbKo6W_m-SkSZIakMfTl9XA&usqp=CAU" alt="img-3" />
+                            <img class="image-item" src="https://theplanetd.com/images/places-to-visit-in-berlin-oberbaum-bridge.jpg" alt="img-4" />
+                            <img class="image-item" src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2VybWFueXxlbnwwfHwwfHx8MA%3D%3D" alt="img-5" />
+                            <img class="image-item" src="https://images.unsplash.com/photo-1601589334680-fb14d7d574f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGdlcm1hbnl8ZW58MHx8MHx8fDA%3D" alt="img-6" />
+                            <img class="image-item" src="https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGdlcm1hbnl8ZW58MHx8MHx8fDA%3D" alt="img-7" />
+                            <img class="image-item" src="https://images.unsplash.com/photo-1634627219651-70f2c49a5bcd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGdlcm1hbnl8ZW58MHx8MHx8fDA%3D" alt="img-8" />
+                            <img class="image-item" src="https://images.unsplash.com/photo-1603787935137-58167f55336f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGdlcm1hbnl8ZW58MHx8MHx8fDA%3D" alt="img-9" />
+                            <img class="image-item" src="https://images.unsplash.com/photo-1622363021659-c72cbdfd1aa6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGdlcm1hbnl8ZW58MHx8MHx8fDA%3D" alt="img-10" />
+                          </ul>
+                          <button id="next-slide" class="slide-button material-symbols-rounded">
+                            chevron_right
+                          </button>
+                        </div>
+                        <div class="slider-scrollbar">
+                          <div class="scrollbar-track">
+                            <div class="scrollbar-thumb"></div>
+                          </div>
+                        </div>
+                      </div>
 
                 </div>
-            </section> -->
+            </section>
+
+
 
 
         </article>
@@ -1206,9 +1195,9 @@
 
 
     <!---===GO UP===--->
-    <a href="#top" class="go-top" data-go-top>
+    <!-- <a href="#top" class="go-top" data-go-top>
         <ion-icon name="arrow-up-sharp"></ion-icon>
-    </a>
+    </a> -->
 
 
     <!---===Custom Javascript link===--->
