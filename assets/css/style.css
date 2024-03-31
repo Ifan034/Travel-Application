@@ -2221,6 +2221,28 @@ address {
 /*<-----------------------O----------------------->*/
 
 
+/* Payment Method*/
+.payment-method h4{
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-weight: var(--fw-500);
+  font-size: 1em;
+}
+
+.payment-img img{
+  width: 80%;
+  height: 80px;
+  background: var(--gray-light);
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+
+/*<-----------------------O----------------------->*/
+
+
+
 
 
 
@@ -2381,6 +2403,12 @@ address {
 
   .footer-bottom-list { justify-content: flex-end; }
 
+  .payment-img img{
+    width: 80%;
+    height: 100px;
+    padding: 3px;
+  }
+
 }
 
 /*<-----------------------O----------------------->*/
@@ -2507,6 +2535,18 @@ address {
   .footer-form .input-field { margin-bottom: 0; }
 
   .footer-form .btn { width: max-content; }
+
+  .payment-method h4{
+    margin-top: 12px;
+    margin-bottom: 18px;
+    font-weight: var(--fw-500);
+    font-size: 1em;
+  }
+
+  .payment-img img{
+    width: 50%;
+    height: 80px;
+  }
 
 }
 
@@ -2709,6 +2749,17 @@ address {
   .form-wrapper { flex-direction: column; }
 
   .footer-form .btn { width: 100%; }
+
+  .payment-method h4 {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .payment-img img{
+    width: 80%;
+    height: 50px;
+    padding: 3px;
+  }
 
 }
 
